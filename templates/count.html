@@ -1,0 +1,12 @@
+<h1>Entered text</h1>
+<br>
+{{ fulltext }}
+<h1>No of words are:</h1>
+{{ length }}
+<h1>Frequency of each word</h1>
+{% for word,fr in freq %}
+{{ word}}={{fr}}
+<br/>
+{% endfor %}
+<br>
+<a href="{% url 'home' %}">Back to home</a>
